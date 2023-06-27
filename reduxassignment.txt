@@ -1,0 +1,22 @@
+what is redux?
+
+Redux is a predictable state container for javascript apps. Redux is a state management library that you
+can use with any JS library or framework like react, angular, or vue. It is used for storing the state of different variables in our react application state. 
+
+
+What is Redux Thunk used for? 
+
+It allows us to return functions instead of objects from redux actions. Plain redux doesn’t allow complex logic inside action functions, you can only perform simple synchronous updates by dispatching actions. It extends its ability and lets you write complex logic that interacts with the store. Thunk allows us to dispatch actions manually, which gives us the power to incorporate some logic or run some asynchronous code before dispatching an action.
+
+
+What is Pure Component? When to use Pure Component over
+Component? 
+
+It is one of the most significant ways to optimize React applications. By using the pure component, there is no need for shouldComponentUpdate() Lifecycle Method as ReactJS Pure Component Class compares current state and props with new props and states to decide whether the component should re-render or Not. We can use Pure component in many conditions:
+
+
+
+What is the second argument that can optionally be passed
+tosetState and what is its purpose? 
+
+The second argument that can optionally be passed is callback function which gets called immediately after the setstate is completed and component get re-rendered. The purpose is to specify those actions in a function which should be the second argument of the setState. If we would not do so then those actions will be performed on the previous value of state because of asynchronous nature of setState.
